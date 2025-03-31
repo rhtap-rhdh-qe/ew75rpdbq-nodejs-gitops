@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ew75rpdbq-nodejs-gitops
+  description: This is GitOps manifest for ew75rpdbq-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=ew75rpdbq-nodejs
+    backstage.io/kubernetes-id: ew75rpdbq-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: ew75rpdbq-nodejs   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ew75rpdbq-nodejs

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ew75rpdbq-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/ew75rpdbq-nodejs
